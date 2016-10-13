@@ -28,7 +28,7 @@ table {border:1px solid black;border-collapse: collapse;}
       function drawChart() {
         var sc_data = google.visualization.arrayToDataTable([
           ['Status', 'Number'],
-['Passed', 0], ['Failed', 1], ['Undefined', 0]
+['Passed', 1], ['Failed', 1], ['Undefined', 0]
         ]);
 
         var sc_options = {
@@ -126,24 +126,30 @@ table {border:1px solid black;border-collapse: collapse;}
                       <defs id="defs"/>
                       <rect x="0" y="0" width="400" height="300" stroke="none" stroke-width="0" fill="#ffffff"/>
                       <g>
-                        <rect x="248" y="58" width="11" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"/>
+                        <rect x="248" y="58" width="11" height="29" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"/>
                         <g>
                           <rect x="248" y="58" width="11" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"/>
-                          <circle cx="253.5" cy="63.5" r="5.5" stroke="none" stroke-width="0" fill="#ff0000"/>
+                          <circle cx="253.5" cy="63.5" r="5.5" stroke="none" stroke-width="0" fill="#008000"/>
+                        </g>
+                        <g>
+                          <rect x="248" y="76" width="11" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"/>
+                          <circle cx="253.5" cy="81.5" r="5.5" stroke="none" stroke-width="0" fill="#ff0000"/>
                         </g>
                       </g>
                       <g>
-                        <path d="M230,149.48000000000002L230,164.68A76,60.800000000000004,0,0,1,78,164.68L78,149.48000000000002A76,60.800000000000004,0,0,0,230,149.48000000000002" stroke="#bf0000" stroke-width="1" fill="#bf0000"/>
-                        <ellipse cx="154" cy="143.4" rx="76" ry="60.800000000000004" stroke="#ff0000" stroke-width="1" fill="#ff0000"/>
-                        <text text-anchor="start" x="-474" y="153.33" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">
-                          100%
-                        </text>
+                        <path d="M146.4,204.20000000000002L146.4,219.4A76,60.800000000000004,0,0,1,70.4,158.6L70.4,143.4A76,60.800000000000004,0,0,0,146.4,204.20000000000002" stroke="#bf0000" stroke-width="1" fill="#bf0000"/>
+                        <path d="M146.4,143.4L146.4,204.20000000000002A76,60.800000000000004,0,0,1,146.4,82.6L146.4,143.4A0,0,0,0,0,146.4,143.4" stroke="#ff0000" stroke-width="1" fill="#ff0000"/>
+                      </g>
+                      <g>
+                        <path d="M230,143.4L230,158.6A76,60.800000000000004,0,0,1,154,219.4L154,204.20000000000002A76,60.800000000000004,0,0,0,230,143.4" stroke="#006000" stroke-width="1" fill="#006000"/>
+                        <path d="M154,143.4L154,82.6A76,60.800000000000004,0,0,1,154,204.20000000000002L154,143.4A0,0,0,0,0,154,143.4" stroke="#008000" stroke-width="1" fill="#008000"/>
                       </g>
                       <g/>
                     </svg>
                   </div>
                 </div>
                 <div style="display: none; position: absolute; top: 310px; left: 410px; white-space: nowrap; font-family: Arial; font-size: 11px;" aria-hidden="true">
+                  F…
                 </div>
                 <div>
                 </div>
@@ -186,7 +192,7 @@ table {border:1px solid black;border-collapse: collapse;}
             failed
           </td>
           <td>
-            0
+            1
           </td>
           <td>
             1
@@ -195,7 +201,7 @@ table {border:1px solid black;border-collapse: collapse;}
             0
           </td>
           <td>
-            56.34s
+            57.71s
           </td>
         </tr>
       </tbody>
@@ -231,6 +237,30 @@ table {border:1px solid black;border-collapse: collapse;}
             Duration
           </th>
         </tr>
+        <tr class="passed">
+          <td>
+            As a user status I want to create ticket on NOC with different status
+          </td>
+          <td/>
+          <td>
+            passed
+          </td>
+          <td>
+            2
+          </td>
+          <td>
+            0
+          </td>
+          <td>
+            0
+          </td>
+          <td>
+            0
+          </td>
+          <td>
+            41.89s
+          </td>
+        </tr>
         <tr class="failed">
           <td>
             As a user status I want to create ticket on NOC with different status
@@ -242,7 +272,7 @@ table {border:1px solid black;border-collapse: collapse;}
             failed
           </td>
           <td>
-            1
+            0
           </td>
           <td>
             1
@@ -254,7 +284,7 @@ table {border:1px solid black;border-collapse: collapse;}
             0
           </td>
           <td>
-            56.34s
+            15.82s
           </td>
         </tr>
       </tbody>

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 71.317 sec <<< FAILURE! - in TestSuite
-feature(continuum.cucumber.testRunner.TestRunner)  Time elapsed: 56.42 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 73.9 sec <<< FAILURE! - in TestSuite
+feature(continuum.cucumber.testRunner.TestRunner)  Time elapsed: 57.759 sec  <<< FAILURE!
 cucumber.runtime.CucumberException: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')]
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -12,8 +12,8 @@ cucumber.runtime.CucumberException: java.lang.AssertionError: Not able to locate
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at continuum.cucumber.WebdriverWrapper.getWebElement(WebdriverWrapper.java:110)
 	at continuum.cucumber.WebdriverWrapper.clickUsingJavaScript(WebdriverWrapper.java:764)
-	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:93)
-	at continuum.cucumber.stepDefinations.StepDefinations.user_is_able_to_create_ticket_in_NOC_portal_for_with_status_in(StepDefinations.java:48)
+	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:92)
+	at continuum.cucumber.stepDefinations.StepDefinations.user_is_able_to_create_ticket_in_NOC_portal_for_with_status_in(StepDefinations.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -32,14 +32,14 @@ cucumber.runtime.CucumberException: java.lang.AssertionError: Not able to locate
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:73)
 Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 342 milliseconds
+Command duration or timeout: 479 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'RMM-LT-618', ip: '10.2.60.170', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
 *** Element info: {Using=xpath, value=//table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')]}
-Session ID: cc5d477e-5b10-47cf-8ba6-0ce94a611bdc
+Session ID: 190e88d4-f4dd-4629-a2b9-66771e74e3bf
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:2142/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:10022/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'RMM-LT-618', ip: '10.2.60.170', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'

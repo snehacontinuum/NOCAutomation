@@ -44,14 +44,13 @@ public class NocHomePage {
    
 	//public Locator rememberMeCheckbox=new Locator("Remember me checkbox","//span[@class='cust_checkbox checkbox cust_checkbox_off']");
 	
-public void startNOCApplication(){
-		wd.openApplication(Utilities.getMavenProperties("applicationUrl"));
+public void startNOCApplication(String url){
+		wd.openApplication(url);
 	
 	}
 
 	public void loginToNocPortal(String emaild, String pwd){
-		   startNOCApplication();
-       
+		          
          wd.waitFor(9000);
 		
          Reporter.log("Enter login credentials  to ITS portal");
@@ -154,6 +153,11 @@ public void startNOCApplication(){
 			{
 	        	Assert.assertEquals(ticket_status, nocStatus,"Ticket Status is correctly updated on NOC");
 			}
+		}
+
+		public void openApplication(String url) {
+			wd.openApplication(url);
+			
 		}
 
 }

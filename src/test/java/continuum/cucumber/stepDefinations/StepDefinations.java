@@ -30,8 +30,38 @@ public class StepDefinations extends PageFactory {
 	private String connectwiseTicket=null;
 	
 	
+	@Given("^User can navigate to NOC Portal for \"([^\"]*)\"$")
+	public void user_can_navigate_to_NOC_Portal_for(String env) throws Throwable {
+		String url=null;
+		if(Utilities.getMavenProperties("Environment").equalsIgnoreCase("DT"))
+			 url=Utilities.getMavenProperties("NOC_DTapplicationUrl");
+		else
+			 url=Utilities.getMavenProperties("NOC_PREapplicationUrl");
+		nocHomePage.openApplication(url);
+	}
+	   
 
+	@When("^Enter Login credentials \"([^\"]*)\" and  \"([^\"]*)\"$")
+	public void enter_Login_credentials_and(String emaild, String pwd) throws Throwable {
+		nocHomePage.loginToNocPortal(emaild, pwd);
+	}
 
+	@Then("^Verify user is login to NOC portal$")
+	public void verify_user_is_login_to_NOC_portal() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^Verify user is able to logout$")
+	public void verify_user_is_able_to_logout() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+	
+	@Given("^Open NOC application$")
+	public void openApplication(){
+		nocHomePage.startNOCApplication(Utilities.getMavenProperties("NOC_DTapplicationUrl"));
+	}
 
 	@Given("^User is login to NOC portal$")
 	public void user_is_login_to_NOC_portal() throws Throwable {

@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>continuum</groupId>
-  <artifactId>BDTAutomation</artifactId>
+  <artifactId>NOCAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>BDTAutomation</name>
+  <name>NOCAutomation</name>
   <url>http://maven.apache.org</url>
 
   <properties>
