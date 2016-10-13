@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-BDTSuite">
+              <span class="suite-name border-failed">BDTSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-BDTSuite">
+                    <span>C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCCucumber\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-BDTSuite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-BDTSuite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-BDTSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-BDTSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-BDTSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-BDTSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BDTSuite" class="hide-methods failed suite-BDTSuite"> (hide)</a> <!-- hide-methods failed suite-BDTSuite -->
+                      <a href="#" panel-name="suite-BDTSuite" class="show-methods failed suite-BDTSuite"> (show)</a> <!-- show-methods failed suite-BDTSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-BDTSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.TestRunner" hash-for-method="feature(As a user status I want to create ticket on NOC with different status)">feature(As a user status I want to create ticket on NOC with different status)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BDTSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BDTSuite" class="panel BDTSuite">
+          <div class="suite-BDTSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">continuum.cucumber.testRunner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user status I want to create ticket on NOC with different status)">
+                  </a> <!-- feature(As a user status I want to create ticket on NOC with different status) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user status I want to create ticket on NOC with different status)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:73)
+Caused by: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]
+	at continuum.cucumber.WebdriverWrapper.getWebElement(WebdriverWrapper.java:125)
+	at continuum.cucumber.WebdriverWrapper.clickUsingJavaScript(WebdriverWrapper.java:764)
+	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:93)
+	at continuum.cucumber.stepDefinations.StepDefinations.user_is_able_to_create_ticket_in_NOC_portal_for_with_status_in(StepDefinations.java:48)
+	at ✽.When User is able to create ticket in NOC portal for &quot;PSADTTM6&quot;, &quot;PSADTM6-site1&quot;,&quot;VOREX2&quot; with status in &quot;&lt;Datasheet&gt;&quot;(DemoSprint/NOCtoPSA.feature:7)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 342 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]}
+Session ID: cc5d477e-5b10-47cf-8ba6-0ce94a611bdc
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:2142/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+Command duration or timeout: 1.31 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]}
+Session ID: 3a7fb9ab-16fa-4da4-aee5-1c05d921acfc
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=3a7fb9ab-16fa-4da4-aee5-1c05d921acfc, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:2142/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at continuum.cucumber.WebdriverWrapper.getWebElement(WebdriverWrapper.java:110)
+	at continuum.cucumber.WebdriverWrapper.clickUsingJavaScript(WebdriverWrapper.java:764)
+	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:93)
+	at continuum.cucumber.stepDefinations.StepDefinations.user_is_able_to_create_ticket_in_NOC_portal_for_with_status_in(StepDefinations.java:48)
+	at cucumber.runtime.Utils$1.call(Utils.java:37)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+	at cucumber.runtime.Utils.invoke(Utils.java:31)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:73)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 53 more
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 342 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]}
+Session ID: cc5d477e-5b10-47cf-8ba6-0ce94a611bdc
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:2142/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
+	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 70 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDTSuite-class-failed -->
+        </div> <!-- panel BDTSuite -->
+        <div panel-name="test-xml-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCCucumber\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;BDTSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;continuum.cucumber.ListnerWebDriver&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;PSA-Test&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;continuum.cucumber.testRunner&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;continuum.cucumber.testRunner.TestRunner&quot;/&gt;
+      &lt;class name=&quot;continuum.cucumber.testRunner.Runner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PSA-Test --&gt;
+  &lt;test name=&quot;PSA-Test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;continuum.cucumber.testRunner.TestRunner&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;afterTest&quot;/&gt;
+          &lt;include name=&quot;setUpClass&quot;/&gt;
+          &lt;include name=&quot;beforeTest&quot;/&gt;
+          &lt;include name=&quot;feature&quot; invocation-numbers=&quot;0&quot;/&gt;
+          &lt;include name=&quot;tearDownClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- continuum.cucumber.testRunner.TestRunner --&gt;
+      &lt;class name=&quot;continuum.cucumber.testRunner.Runner&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;setUpClass&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- continuum.cucumber.testRunner.Runner --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PSA-Test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- BDTSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BDTSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">PSA-Test (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">PSA-Test(failed) (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BDTSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">feature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BDTSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BDTSuite');
+function tableData_BDTSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'feature')
+data.setCell(0, 2, 'continuum.cucumber.testRunner.TestRunner')
+data.setCell(0, 3, 56405);
+window.suiteTableData['BDTSuite']= { tableData: data, tableDiv: 'times-div-BDTSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
+              <div id="times-div-BDTSuite">
+              </div> <!-- times-div-BDTSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BDTSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Log in to NOC application</span>
+                <span class="reporter-method-output">Opening application with urlhttps://noc.dtitsupport247.net</span>
+                <span class="reporter-method-output">Enter login credentials  to ITS portal</span>
+                <span class="reporter-method-output">Writing user_sdmto Login email id textbox</span>
+                <span class="reporter-method-output">Writing sdm@1234to Login password text box</span>
+                <span class="reporter-method-output">Clicking on  Login button</span>
+                <span class="reporter-method-output">Clicking on  Close btn on popup</span>
+                <span class="reporter-method-output">Close btn on popup exists true</span>
+                <span class="reporter-method-output">*****  feature test has Failed *****</span>
+                <span class="reporter-method-output"><br> <a target ="_blank"href="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCCucumber\target\Screenshots\null13_Oct_2016__03_45_33PM.jpg"><img src="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCCucumber\target\Screenshots\null13_Oct_2016__03_45_33PM.jpg"alt="screenshot Not available"height="400"width="400"></a></span>
+                <span class="reporter-method-output">Screenshot can be found : file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCCucumber\target\Screenshots\null13_Oct_2016__03_45_33PM.jpg</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">continuum.cucumber.testRunner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">3237 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+                <span class="method-start">4662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">61952 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">continuum.cucumber.testRunner.Runner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">69054 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">continuum.cucumber.testRunner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">69199 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
