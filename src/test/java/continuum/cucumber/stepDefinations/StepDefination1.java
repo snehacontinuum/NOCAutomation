@@ -101,10 +101,12 @@ public class StepDefination1 extends PageFactory {
 		nocHomePage.QuickReports();
 	}
 	
-	@Then("^Verify Correct Sub menus get displayed  in Quick Reports Main Menu$")
+	@Then("^Verify Correct Sub menus get displayed in Quick Reports Main Menu$")
 	public void verify_Correct_Sub_menus_get_displayed_in_Quick_Reports_Main_Menu() throws Throwable {
-		nocHomePage.QuickReports();
+	   nocHomePage.QuickReports();
 	}
+	
+	
 
 	
 }

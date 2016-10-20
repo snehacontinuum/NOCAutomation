@@ -235,7 +235,7 @@ public void startNOCApplication(String url){
 
 	public void loginToNocPortal(String emaild, String pwd){
 		          
-         wd.waitFor(9000);
+         wd.waitFor(3000);
 		
          Reporter.log("Enter login credentials  to ITS portal");
         
