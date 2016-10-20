@@ -21,13 +21,14 @@
           <include name="afterTest"/>
           <include name="setUpClass"/>
           <include name="beforeTest"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="feature"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- continuum.cucumber.testRunner.TestRunner -->
       <class name="continuum.cucumber.testRunner.Runner">
         <methods>
           <include name="setUpClass"/>
+          <include name="feature"/>
         </methods>
       </class> <!-- continuum.cucumber.testRunner.Runner -->
     </classes>
