@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,6 +106,30 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-BDTSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BDTSuite" class="hide-methods passed suite-BDTSuite"> (hide)</a> <!-- hide-methods passed suite-BDTSuite -->
+                      <a href="#" panel-name="suite-BDTSuite" class="show-methods passed suite-BDTSuite"> (show)</a> <!-- show-methods passed suite-BDTSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-BDTSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.Runner" hash-for-method="feature(As a user status I want to create ticket on NOC with different status)">feature(As a user status I want to create ticket on NOC with different status)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.Runner" hash-for-method="feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)">feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.Runner" hash-for-method="feature(As a user status I want to create ticket on NOC with different status)">feature(As a user status I want to create ticket on NOC with different status)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BDTSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,32 +153,32 @@
                   </a> <!-- feature(As a user status I want to create ticket on NOC with different status) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(As a user status I want to create ticket on NOC with different status)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class=&apos;dmSubmenu&apos;]//table[@class=&apos;dmItem1&apos;]//td[@id=&apos;dm0m6i2tdT&apos;]
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:73)
-Caused by: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]
+	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:72)
+Caused by: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class=&apos;dmSubmenu&apos;]//table[@class=&apos;dmItem1&apos;]//td[@id=&apos;dm0m6i2tdT&apos;]
 	at continuum.cucumber.WebdriverWrapper.getWebElement(WebdriverWrapper.java:125)
-	at continuum.cucumber.WebdriverWrapper.clickUsingJavaScript(WebdriverWrapper.java:764)
-	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:92)
+	at continuum.cucumber.WebdriverWrapper.clickElement(WebdriverWrapper.java:834)
+	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:93)
 	at continuum.cucumber.stepDefinations.StepDefinations.user_is_able_to_create_ticket_in_NOC_portal_for_with_status_in(StepDefinations.java:78)
-	at ✽.When User is able to create ticket in NOC portal for &quot;PSADTTM6&quot;, &quot;PSADTM6-site1&quot;,&quot;VOREX2&quot; with status in &quot;&lt;Datasheet&gt;&quot;(DemoSprint/NOCTicket.feature:9)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 479 milliseconds
+	at ✽.When User is able to create ticket in NOC portal for &quot;CMSPL32&quot;, &quot;Georgia&quot;,&quot;&lt;Resource&gt;&quot; with status in &quot;New&quot;(BVT/GenerateTicketBVT.feature:9)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class=&apos;dmSubmenu&apos;]//table[@class=&apos;dmItem1&apos;]//td[@id=&apos;dm0m6i2tdT&apos;] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 425 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]}
-Session ID: 190e88d4-f4dd-4629-a2b9-66771e74e3bf
+*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@class=&apos;dmItem1&apos;]//td[@id=&apos;dm0m6i2tdT&apos;]}
+Session ID: f565226b-460e-4b51-ae71-2a73702f052e
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:10022/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
-Command duration or timeout: 2.77 seconds
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:6916/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+Command duration or timeout: 805 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]}
-Session ID: c115e63e-9bce-4088-88c1-b3cdc9c22c37
+*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@class=&apos;dmItem1&apos;]//td[@id=&apos;dm0m6i2tdT&apos;]}
+Session ID: 84aff8e9-fdfd-4a52-9f9b-171b52ca1326
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=c115e63e-9bce-4088-88c1-b3cdc9c22c37, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:10022/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=84aff8e9-fdfd-4a52-9f9b-171b52ca1326, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:6916/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
@@ -163,8 +187,8 @@ Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at continuum.cucumber.WebdriverWrapper.getWebElement(WebdriverWrapper.java:110)
-	at continuum.cucumber.WebdriverWrapper.clickUsingJavaScript(WebdriverWrapper.java:764)
-	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:92)
+	at continuum.cucumber.WebdriverWrapper.clickElement(WebdriverWrapper.java:834)
+	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:93)
 	at continuum.cucumber.stepDefinations.StepDefinations.user_is_able_to_create_ticket_in_NOC_portal_for_with_status_in(StepDefinations.java:78)
 	at cucumber.runtime.Utils$1.call(Utils.java:37)
 	at cucumber.runtime.Timeout.timeout(Timeout.java:13)
@@ -178,22 +202,22 @@ Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0
 	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:73)
+	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:72)
 Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
 	... 53 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 479 milliseconds
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class=&apos;dmSubmenu&apos;]//table[@class=&apos;dmItem1&apos;]//td[@id=&apos;dm0m6i2tdT&apos;] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 425 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
 System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
-*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@id=&apos;dm0m6i2td&apos;]//td[contains(text(),&apos; Generate New Ticket &apos;)]}
-Session ID: 190e88d4-f4dd-4629-a2b9-66771e74e3bf
+*** Element info: {Using=xpath, value=//table[@class=&apos;dmSubmenu&apos;]//table[@class=&apos;dmItem1&apos;]//td[@id=&apos;dm0m6i2tdT&apos;]}
+Session ID: f565226b-460e-4b51-ae71-2a73702f052e
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:10022/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:6916/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;RMM-LT-618&apos;, ip: &apos;10.2.60.170&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
@@ -206,7 +230,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
-	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
 	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
 	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
@@ -215,7 +239,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 70 stack frames
+... Removed 69 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Feature)                  </em>
@@ -223,6 +247,44 @@ Driver info: driver.version: EventFiringWebDriver
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-BDTSuite-class-failed -->
+          <div class="suite-BDTSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">continuum.cucumber.testRunner.Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user status I want to create ticket on NOC with different status)">
+                  </a> <!-- feature(As a user status I want to create ticket on NOC with different status) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user status I want to create ticket on NOC with different status)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)">
+                  </a> <!-- feature(As a user I can login to NOC portal with valid credentials so that only authorized user have) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user I can login to NOC portal with valid credentials so that only authorized user have)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user status I want to create ticket on NOC with different status)">
+                  </a> <!-- feature(As a user status I want to create ticket on NOC with different status) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user status I want to create ticket on NOC with different status)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDTSuite-class-passed -->
         </div> <!-- panel BDTSuite -->
         <div panel-name="test-xml-BDTSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -312,16 +374,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'continuum.cucumber.testRunner.TestRunner')
-data.setCell(0, 3, 57789);
+data.setCell(0, 3, 43387);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'feature')
+data.setCell(1, 2, 'continuum.cucumber.testRunner.Runner')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'feature')
+data.setCell(2, 2, 'continuum.cucumber.testRunner.Runner')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'feature')
+data.setCell(3, 2, 'continuum.cucumber.testRunner.Runner')
+data.setCell(3, 3, 0);
 window.suiteTableData['BDTSuite']= { tableData: data, tableDiv: 'times-div-BDTSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-BDTSuite">
               </div> <!-- times-div-BDTSuite -->
             </div> <!-- times-div -->
@@ -335,17 +409,36 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">*****  feature test has Passed *****</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">*****  feature test has Passed *****</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">*****  feature test has Passed *****</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+              <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Opening application with urlhttps://noc.dtitsupport247.net</span>
                 <span class="reporter-method-output">Log in to NOC application</span>
                 <span class="reporter-method-output">Enter login credentials  to ITS portal</span>
-                <span class="reporter-method-output">Writing user_sdmto Login email id textbox</span>
-                <span class="reporter-method-output">Writing sdm@1234to Login password text box</span>
+                <span class="reporter-method-output">Writing user_tlto Login email id textbox</span>
+                <span class="reporter-method-output">Writing tl@09cont16to Login password text box</span>
                 <span class="reporter-method-output">Clicking on  Login button</span>
                 <span class="reporter-method-output">Clicking on  Close btn on popup</span>
-                <span class="reporter-method-output">Close btn on popup exists true</span>
+                <span class="reporter-method-output">Mouse hovering over management Tab</span>
+                <span class="reporter-method-output">Mouse hovering over Tickets tab </span>
                 <span class="reporter-method-output">*****  feature test has Failed *****</span>
-                <span class="reporter-method-output"><br> <a target ="_blank"href="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg"><img src="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg"alt="screenshot Not available"height="400"width="400"></a></span>
-                <span class="reporter-method-output">Screenshot can be found : file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg</span>
+                <span class="reporter-method-output"><br> <a target ="_blank"href="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg"><img src="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg"alt="screenshot Not available"height="400"width="400"></a></span>
+                <span class="reporter-method-output">Screenshot can be found : file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -370,31 +463,43 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">4593 ms</span>
+                <span class="method-start">3638 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
-                <span class="method-start">6187 ms</span>
+                <span class="method-start">4010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">65278 ms</span>
+                <span class="method-start">47701 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">continuum.cucumber.testRunner.Runner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">71994 ms</span>
+                <span class="method-start">53888 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+                <span class="method-start">53912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)</span>
+                <span class="method-start">53913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+                <span class="method-start">53913 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">continuum.cucumber.testRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">72024 ms</span>
+                <span class="method-start">53914 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

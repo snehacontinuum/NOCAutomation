@@ -32,30 +32,29 @@ public class NOCGenerateTicketPage {
 		
 		wd.waitFor(3000);
 		wd.switchToNewWindow();
-		wd.waitFor(4000);
+		wd.waitFor(5000);
 		String generateTicketWindowHnd=wd.getWindowHandle();
+		System.out.println("Window handle of generate ticket"+generateTicketWindowHnd);
 		wd.clearandSendKeys(member, mspSearch);
-		wd.clickUsingJavaScript(memberSearchBtn);
-		wd.waitFor(3000);
+		wd.clickElement(memberSearchBtn);
+		wd.waitFor(8000);
+		Reporter.log("Switching to member search window");
 		wd.switchToNewWindow();
 		wd.waitFor(5000);
-		//String memberSearchWindowHnd=wd.getWindowHandle()
+		String memberSearchWindowHnd=wd.getWindowHandle();
+		System.out.println("Window handle of member search"+memberSearchWindowHnd);
 		wd.waitForElementToBeDisplayed(memberList, 3000);
-		wd.getWebdriver().findElement(By.xpath("//tr/td[contains(text(),'"+ member+"')]")).click();
+		wd.getWebdriver().findElement(By.xpath("//tr/td[contains(text(),'"+ member+"')][1]")).click();
 		wd.waitFor(3000);
 		wd.switchToWindow(generateTicketWindowHnd);
 		wd.waitFor(5000);
-//		wd.waitForElementToBeDisplayed(siteCheckbox, 3000);
-//		wd.changeCheckboxStatus(siteCheckbox,"check");
-		//wd.selectByTextFromDropDown(mspDropdown, member);
+		Reporter.log("Select corresponding site");
 		wd.getWebdriver().findElement(By.xpath("//input[contains(@value,'"+site+"')]")).click();
 		wd.waitFor(2000);
 		wd.clearandSendKeys("Automation test ticket", subjectTB);
-		wd.clearandSendKeys("Descrotion:automation test ticket", descriptionTB);
+		wd.clearandSendKeys("Description:automation test ticket", descriptionTB);
 		wd.clearandSendKeys("99", priority);
-//		wd.waitForOptionToBePresentInList(resourceDropdown, resource, 4000);
-//		wd.selectByValueFromDropDown(resourceDropdown,resource);
-//		wd.waitFor(2000);
+
 		wd.selectByTextFromDropDown(familyDropdown,"Antivirus");
 		wd.selectValueByIndexFromDropDown(ticketTypeDropdown, 0);
 		
@@ -66,12 +65,20 @@ public class NOCGenerateTicketPage {
 		wd.selectValueByIndexFromDropDown(subStatusDropdown, 1);
 		wd.selectByValueFromDropDown(resourceDropdown, resource);
 		wd.clickElement(submitBtn);
-		
+		Reporter.log("Get ticket no from popup");
+		String ticMsg=wd.getAlertMessage(3000);
+		System.out.println("Ticket msg"+ticMsg);
+		wd.acceptAlert();
+		int last=ticMsg.length();
+		TicketNo=ticMsg.substring(last-18,last);
+		TicketNo=TicketNo.replace("/","").replace("-","").trim();
+		Reporter.log("Generated Ticket no"+TicketNo);
+		System.out.println("Ticket no"+TicketNo);
 		return TicketNo;
 	}
 
-	public String getConnectwiseTicketNoFromDB(String nocTicket) {
-		    Reporter.log("Waiting for Connectwise Ticket to be generate in DB");
+	public String TicketNoFromDB(String nocTicket) {
+		    Reporter.log("Verify Ticket  generated in DB");
 		   
 		    wd.waitFor(60000);
 		   String databaseName= Utilities.getMavenProperties("DBName");
@@ -79,9 +86,9 @@ public class NOCGenerateTicketPage {
 		   String username= Utilities.getMavenProperties("DBUsername");
 		   String password= Utilities.getMavenProperties("DBPwd");
 		    Connection conn=DatabaseUtility.createConnection(databaseName, sqlServerURL, username, password);
-		    String query="Select CONNECTWISESRNO,* from jmgttaskmanagement with(nolock) where GroupName='PSADTTM6' and TaskID="+nocTicket;
+		    String query="Select status,Assignto,assigntocell,Assigntogroup,Assigntouser,* from jmgttaskmanagement with(NOLOCK) where taskid in "+nocTicket;
 		    String result=DatabaseUtility.executQuery(conn, query);
-		    Reporter.log("Connectwise Ticket no from DB :"+result);
+		    Reporter.log("Ticket details from DB :"+result);
 		    System.out.println("Result ="+result);
 		    return result;
 	}

@@ -11,17 +11,25 @@
     </packages>
     <classes>
       <class name="continuum.cucumber.testRunner.TestRunner"/>
+      <class name="continuum.cucumber.testRunner.Runner"/>
     </classes>
   </test> <!-- PSA-Test -->
   <test name="PSA-Test(failed)">
     <classes>
       <class name="continuum.cucumber.testRunner.TestRunner">
         <methods>
-          <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="afterTest"/>
           <include name="setUpClass"/>
+          <include name="beforeTest"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
       </class> <!-- continuum.cucumber.testRunner.TestRunner -->
+      <class name="continuum.cucumber.testRunner.Runner">
+        <methods>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- continuum.cucumber.testRunner.Runner -->
     </classes>
   </test> <!-- PSA-Test(failed) -->
 </suite> <!-- Failed suite [BDTSuite] -->

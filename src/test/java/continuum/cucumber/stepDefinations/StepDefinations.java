@@ -80,10 +80,10 @@ public class StepDefinations extends PageFactory {
       
 	}
 
-	@Then("^Veirfy ticket created in Database$")
-	public void veirfy_ticket_created_in_Database() throws Throwable {
+	@Then("^Verify ticket created in Database$")
+	public void verify_ticket_created_in_Database() throws Throwable {
 	   Reporter.log("Verify ticket created in database");
-	  connectwiseTicket=nocTicketPage.getConnectwiseTicketNoFromDB(nocTicket);
+	  nocTicketPage.TicketNoFromDB(nocTicket);
 
 	}
 	
@@ -103,32 +103,6 @@ public void verify_same_ticket_is_created_in_NOC() throws Throwable {
 
 
 
-@Then("^Verify corresponding status is updated on NOC portal \"([^\"]*)\"$")
-public void verify_corresponding_status_is_updated_on_NOC_portal(String nocStatus) throws Throwable {
-
-	// nocTicket="201609140000034";
-    System.out.println("NOC status: "+nocStatus);
-    nocHomePage.verifyStatusOnNOC(getNocTicket(),nocStatus);
-}
-
-
-
-
-private String getNocTicket() {
-	return nocTicket;
-}
-
-private void setNocTicket(String nocTicket) {
-	this.nocTicket = nocTicket;
-}
-
-private String getConnectwiseTicket() {
-	return connectwiseTicket;
-}
-
-private void setConnectwiseTicket(String connectwiseTicket) {
-	this.connectwiseTicket = connectwiseTicket;
-}
 
 	
 

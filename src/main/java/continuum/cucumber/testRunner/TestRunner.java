@@ -40,7 +40,7 @@ plugin = {
 "html:test-report/cucumber",
 "json:test-report/cucumber.json",
 "rerun:target/rerun.txt" },
-tags={"@Test"}
+tags={"@BVT"}
 )
 public class TestRunner {
 private TestNGCucumberRunner testNGCucumberRunner;
@@ -49,7 +49,6 @@ static RemoteWebDriver driver=null;
 
 @BeforeClass(alwaysRun = true)
 public void setUpClass() throws Exception {
-	SeleniumServerUtility.startServer();
     testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
 }
 
@@ -91,7 +90,7 @@ public void tearDownClass() throws Exception {
     testNGCucumberRunner.finish();
     GenerateReport.generateReport();
  	HtmlEmailSender.sendReport();
- 	SeleniumServerUtility.killSeleniumServer();
+ 	//SeleniumServerUtility.killSeleniumServer();
 }
 
 public static String getScenarioName(){

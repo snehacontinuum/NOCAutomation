@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
     <line>
       <![CDATA[Opening application with urlhttps://noc.dtitsupport247.net]]>
@@ -11,10 +11,10 @@
       <![CDATA[Enter login credentials  to ITS portal]]>
     </line>
     <line>
-      <![CDATA[Writing user_sdmto Login email id textbox]]>
+      <![CDATA[Writing user_tlto Login email id textbox]]>
     </line>
     <line>
-      <![CDATA[Writing sdm@1234to Login password text box]]>
+      <![CDATA[Writing tl@09cont16to Login password text box]]>
     </line>
     <line>
       <![CDATA[Clicking on  Login button]]>
@@ -23,36 +23,48 @@
       <![CDATA[Clicking on  Close btn on popup]]>
     </line>
     <line>
-      <![CDATA[Close btn on popup exists true]]>
+      <![CDATA[Mouse hovering over management Tab]]>
+    </line>
+    <line>
+      <![CDATA[Mouse hovering over Tickets tab ]]>
     </line>
     <line>
       <![CDATA[*****  feature test has Failed *****]]>
     </line>
     <line>
-      <![CDATA[<br> <a target ="_blank"href="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg"><img src="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg"alt="screenshot Not available"height="400"width="400"></a>]]>
+      <![CDATA[<br> <a target ="_blank"href="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg"><img src="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg"alt="screenshot Not available"height="400"width="400"></a>]]>
     </line>
     <line>
-      <![CDATA[Screenshot can be found : file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg]]>
+      <![CDATA[Screenshot can be found : file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg]]>
+    </line>
+    <line>
+      <![CDATA[*****  feature test has Passed *****]]>
+    </line>
+    <line>
+      <![CDATA[*****  feature test has Passed *****]]>
+    </line>
+    <line>
+      <![CDATA[*****  feature test has Passed *****]]>
     </line>
   </reporter-output>
-  <suite name="BDTSuite" duration-ms="72922" started-at="2016-10-13T10:57:22Z" finished-at="2016-10-13T10:58:35Z">
+  <suite name="BDTSuite" duration-ms="56657" started-at="2016-10-18T09:36:32Z" finished-at="2016-10-18T09:37:28Z">
     <groups>
       <group name="cucumber">
-        <method signature="Runner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.Runner@56f9d3e5]" name="feature" class="continuum.cucumber.testRunner.Runner"/>
-        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.TestRunner@18e28704]" name="feature" class="continuum.cucumber.testRunner.TestRunner"/>
+        <method signature="Runner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.Runner@6926e27]" name="feature" class="continuum.cucumber.testRunner.Runner"/>
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.TestRunner@345c2dd1]" name="feature" class="continuum.cucumber.testRunner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="PSA-Test" duration-ms="72922" started-at="2016-10-13T10:57:22Z" finished-at="2016-10-13T10:58:35Z">
+    <test name="PSA-Test" duration-ms="56657" started-at="2016-10-18T09:36:32Z" finished-at="2016-10-18T09:37:28Z">
       <class name="continuum.cucumber.testRunner.TestRunner">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:continuum.cucumber.testRunner.TestRunner@18e28704]" name="beforeTest" is-config="true" duration-ms="4579" started-at="2016-10-13T16:27:22Z" finished-at="2016-10-13T16:27:27Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:continuum.cucumber.testRunner.TestRunner@345c2dd1]" name="beforeTest" is-config="true" duration-ms="3634" started-at="2016-10-18T15:06:33Z" finished-at="2016-10-18T15:06:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:continuum.cucumber.testRunner.TestRunner@18e28704]" name="setUpClass" is-config="true" duration-ms="1504" started-at="2016-10-13T16:27:27Z" finished-at="2016-10-13T16:27:28Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:continuum.cucumber.testRunner.TestRunner@345c2dd1]" name="setUpClass" is-config="true" duration-ms="265" started-at="2016-10-18T15:06:37Z" finished-at="2016-10-18T15:06:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.TestRunner@18e28704]" name="feature" duration-ms="57789" started-at="2016-10-13T16:27:28Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2016-10-13T16:28:26Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.TestRunner@345c2dd1]" name="feature" duration-ms="43387" started-at="2016-10-18T15:06:37Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2016-10-18T15:07:21Z">
           <params>
             <param index="0">
               <value>
@@ -62,12 +74,12 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')]]]>
+              <![CDATA[java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class='dmSubmenu']//table[@class='dmItem1']//td[@id='dm0m6i2tdT']]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')]
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class='dmSubmenu']//table[@class='dmItem1']//td[@id='dm0m6i2tdT']
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:73)
+	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,30 +107,30 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')]
+Caused by: java.lang.AssertionError: Not able to locate element : Generate New ticket btn with locator ://table[@class='dmSubmenu']//table[@class='dmItem1']//td[@id='dm0m6i2tdT']
 	at org.testng.Assert.fail(Assert.java:83)
 	at continuum.cucumber.WebdriverWrapper.getWebElement(WebdriverWrapper.java:125)
-	at continuum.cucumber.WebdriverWrapper.clickUsingJavaScript(WebdriverWrapper.java:764)
-	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:92)
+	at continuum.cucumber.WebdriverWrapper.clickElement(WebdriverWrapper.java:834)
+	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:93)
 	at continuum.cucumber.stepDefinations.StepDefinations.user_is_able_to_create_ticket_in_NOC_portal_for_with_status_in(StepDefinations.java:78)
-	at ✽.When User is able to create ticket in NOC portal for "PSADTTM6", "PSADTM6-site1","VOREX2" with status in "<Datasheet>"(DemoSprint/NOCTicket.feature:9)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 479 milliseconds
+	at ✽.When User is able to create ticket in NOC portal for "CMSPL32", "Georgia","<Resource>" with status in "New"(BVT/GenerateTicketBVT.feature:9)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class='dmSubmenu']//table[@class='dmItem1']//td[@id='dm0m6i2tdT'] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 425 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'RMM-LT-618', ip: '10.2.60.170', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-*** Element info: {Using=xpath, value=//table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')]}
-Session ID: 190e88d4-f4dd-4629-a2b9-66771e74e3bf
+*** Element info: {Using=xpath, value=//table[@class='dmSubmenu']//table[@class='dmItem1']//td[@id='dm0m6i2tdT']}
+Session ID: f565226b-460e-4b51-ae71-2a73702f052e
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:10022/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
-Command duration or timeout: 2.77 seconds
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:6916/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+Command duration or timeout: 805 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'RMM-LT-618', ip: '10.2.60.170', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-*** Element info: {Using=xpath, value=//table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')]}
-Session ID: c115e63e-9bce-4088-88c1-b3cdc9c22c37
+*** Element info: {Using=xpath, value=//table[@class='dmSubmenu']//table[@class='dmItem1']//td[@id='dm0m6i2tdT']}
+Session ID: 84aff8e9-fdfd-4a52-9f9b-171b52ca1326
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=c115e63e-9bce-4088-88c1-b3cdc9c22c37, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:10022/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, webdriver.remote.sessionid=84aff8e9-fdfd-4a52-9f9b-171b52ca1326, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:6916/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -131,8 +143,8 @@ Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at continuum.cucumber.WebdriverWrapper.getWebElement(WebdriverWrapper.java:110)
-	at continuum.cucumber.WebdriverWrapper.clickUsingJavaScript(WebdriverWrapper.java:764)
-	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:92)
+	at continuum.cucumber.WebdriverWrapper.clickElement(WebdriverWrapper.java:834)
+	at continuum.cucumber.Page.NocHomePage.gotToGenerateTicket(NocHomePage.java:93)
 	at continuum.cucumber.stepDefinations.StepDefinations.user_is_able_to_create_ticket_in_NOC_portal_for_with_status_in(StepDefinations.java:78)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -150,7 +162,7 @@ Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0
 	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:73)
+	at continuum.cucumber.testRunner.TestRunner.feature(TestRunner.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,21 +196,20 @@ System info: host: 'RMM-LT-618', ip: '10.2.60.170', os.name: 'Windows 7', os.arc
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
 	... 53 more
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 479 milliseconds
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to find element with xpath == //table[@class='dmSubmenu']//table[@class='dmItem1']//td[@id='dm0m6i2tdT'] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 425 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
 System info: host: 'RMM-LT-618', ip: '10.2.60.170', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
-*** Element info: {Using=xpath, value=//table[@class='dmSubmenu']//table[@id='dm0m6i2td']//td[contains(text(),' Generate New Ticket ')]}
-Session ID: 190e88d4-f4dd-4629-a2b9-66771e74e3bf
+*** Element info: {Using=xpath, value=//table[@class='dmSubmenu']//table[@class='dmItem1']//td[@id='dm0m6i2tdT']}
+Session ID: f565226b-460e-4b51-ae71-2a73702f052e
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:10022/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
+Capabilities [{platform=WINDOWS, javascriptEnabled=true, elementScrollBehavior=0, ignoreZoomSetting=false, enablePersistentHover=false, ie.ensureCleanSession=false, browserName=internet explorer, enableElementCacheCleanup=true, unexpectedAlertBehaviour=dismiss, version=11, ie.usePerProcessProxy=false, ignoreProtectedModeSettings=true, cssSelectorsEnabled=true, requireWindowFocus=false, initialBrowserUrl=http://localhost:6916/, handlesAlerts=true, ie.forceCreateProcessApi=false, nativeEvents=true, browserAttachTimeout=0, ie.browserCommandLineSwitches=, takesScreenshot=true}]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
 System info: host: 'RMM-LT-618', ip: '10.2.60.170', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
 Driver info: driver.version: EventFiringWebDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
@@ -208,11 +219,11 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at sun.reflect.GeneratedMethodAccessor68.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103)
-	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
 	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
 	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
@@ -235,10 +246,10 @@ Driver info: driver.version: EventFiringWebDriver
               <![CDATA[Enter login credentials  to ITS portal]]>
             </line>
             <line>
-              <![CDATA[Writing user_sdmto Login email id textbox]]>
+              <![CDATA[Writing user_tlto Login email id textbox]]>
             </line>
             <line>
-              <![CDATA[Writing sdm@1234to Login password text box]]>
+              <![CDATA[Writing tl@09cont16to Login password text box]]>
             </line>
             <line>
               <![CDATA[Clicking on  Login button]]>
@@ -247,33 +258,78 @@ Driver info: driver.version: EventFiringWebDriver
               <![CDATA[Clicking on  Close btn on popup]]>
             </line>
             <line>
-              <![CDATA[Close btn on popup exists true]]>
+              <![CDATA[Mouse hovering over management Tab]]>
+            </line>
+            <line>
+              <![CDATA[Mouse hovering over Tickets tab ]]>
             </line>
             <line>
               <![CDATA[*****  feature test has Failed *****]]>
             </line>
             <line>
-              <![CDATA[<br> <a target ="_blank"href="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg"><img src="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg"alt="screenshot Not available"height="400"width="400"></a>]]>
+              <![CDATA[<br> <a target ="_blank"href="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg"><img src="file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg"alt="screenshot Not available"height="400"width="400"></a>]]>
             </line>
             <line>
-              <![CDATA[Screenshot can be found : file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null13_Oct_2016__04_28_26PM.jpg]]>
+              <![CDATA[Screenshot can be found : file:///C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\target\Screenshots\null18_Oct_2016__03_07_21PM.jpg]]>
             </line>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:continuum.cucumber.testRunner.TestRunner@18e28704]" name="tearDownClass" is-config="true" duration-ms="6715" started-at="2016-10-13T16:28:27Z" finished-at="2016-10-13T16:28:34Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:continuum.cucumber.testRunner.TestRunner@345c2dd1]" name="tearDownClass" is-config="true" duration-ms="6186" started-at="2016-10-18T15:07:21Z" finished-at="2016-10-18T15:07:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:continuum.cucumber.testRunner.TestRunner@18e28704]" name="afterTest" is-config="true" duration-ms="897" started-at="2016-10-13T16:28:34Z" finished-at="2016-10-13T16:28:35Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:continuum.cucumber.testRunner.TestRunner@345c2dd1]" name="afterTest" is-config="true" duration-ms="1296" started-at="2016-10-18T15:07:27Z" finished-at="2016-10-18T15:07:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- continuum.cucumber.testRunner.TestRunner -->
       <class name="continuum.cucumber.testRunner.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:continuum.cucumber.testRunner.Runner@56f9d3e5]" name="setUpClass" is-config="true" duration-ms="23" started-at="2016-10-13T16:28:34Z" finished-at="2016-10-13T16:28:34Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:continuum.cucumber.testRunner.Runner@6926e27]" name="setUpClass" is-config="true" duration-ms="20" started-at="2016-10-18T15:07:27Z" finished-at="2016-10-18T15:07:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.Runner@6926e27]" name="feature" duration-ms="1" started-at="2016-10-18T15:07:27Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2016-10-18T15:07:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[As a user status I want to create ticket on NOC with different status]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[*****  feature test has Passed *****]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.Runner@6926e27]" name="feature" duration-ms="0" started-at="2016-10-18T15:07:27Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2016-10-18T15:07:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[As a user I can login to NOC portal with valid credentials so that only authorized user have]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[*****  feature test has Passed *****]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:continuum.cucumber.testRunner.Runner@6926e27]" name="feature" duration-ms="0" started-at="2016-10-18T15:07:27Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2016-10-18T15:07:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[As a user status I want to create ticket on NOC with different status]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[*****  feature test has Passed *****]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- feature -->
       </class> <!-- continuum.cucumber.testRunner.Runner -->
     </test> <!-- PSA-Test -->
   </suite> <!-- BDTSuite -->
