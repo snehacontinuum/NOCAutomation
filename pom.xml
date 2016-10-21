@@ -193,6 +193,10 @@
             </executions>
             <configuration>
               <systemPropertyVariables>
+               <jenkins>${jenkins}</jenkins>  
+               <reportReciever>${reportReciever}</reportReciever>  
+                   <hubUrl>${hubUrl}</hubUrl>
+                   <browser>${browser}</browser>   
                 <cucumber.options>${cucumber.options}</cucumber.options>
               </systemPropertyVariables>
             </configuration>

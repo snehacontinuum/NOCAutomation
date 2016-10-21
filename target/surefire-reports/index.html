@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-BDTSuite">
+              <span class="suite-name border-passed">BDTSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-BDTSuite">
+                    <span>C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-BDTSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-BDTSuite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-BDTSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-BDTSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-BDTSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-BDTSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BDTSuite" class="hide-methods passed suite-BDTSuite"> (hide)</a> <!-- hide-methods passed suite-BDTSuite -->
+                      <a href="#" panel-name="suite-BDTSuite" class="show-methods passed suite-BDTSuite"> (show)</a> <!-- show-methods passed suite-BDTSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-BDTSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.Runner" hash-for-method="feature(As a user status I want to create ticket on NOC with different status)">feature(As a user status I want to create ticket on NOC with different status)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.Runner" hash-for-method="feature(As a user status I want to create ticket on NOC with different status)">feature(As a user status I want to create ticket on NOC with different status)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.Runner" hash-for-method="feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)">feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.TestRunner" hash-for-method="feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)">feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BDTSuite" title="continuum.cucumber.testRunner.Runner" hash-for-method="feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)">feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BDTSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BDTSuite" class="panel BDTSuite">
+          <div class="suite-BDTSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">continuum.cucumber.testRunner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)">
+                  </a> <!-- feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user I want to check all sub Menus in all Main Menus of NOC Portal)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDTSuite-class-passed -->
+          <div class="suite-BDTSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">continuum.cucumber.testRunner.Runner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user status I want to create ticket on NOC with different status)">
+                  </a> <!-- feature(As a user status I want to create ticket on NOC with different status) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user status I want to create ticket on NOC with different status)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user status I want to create ticket on NOC with different status)">
+                  </a> <!-- feature(As a user status I want to create ticket on NOC with different status) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user status I want to create ticket on NOC with different status)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)">
+                  </a> <!-- feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user I want to check all sub Menus in all Main Menus of NOC Portal)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)">
+                  </a> <!-- feature(As a user I can login to NOC portal with valid credentials so that only authorized user have) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(As a user I can login to NOC portal with valid credentials so that only authorized user have)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BDTSuite-class-passed -->
+        </div> <!-- panel BDTSuite -->
+        <div panel-name="test-xml-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sneha.chemburkar\Documents\GitHub\BDTFrameWork\BDTAutomationCommonFramework\NOCAutomation\NOCAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;BDTSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;continuum.cucumber.ListnerWebDriver&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;PSA-Test&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;continuum.cucumber.testRunner&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;continuum.cucumber.testRunner.TestRunner&quot;/&gt;
+      &lt;class name=&quot;continuum.cucumber.testRunner.Runner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PSA-Test --&gt;
+&lt;/suite&gt; &lt;!-- BDTSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BDTSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">PSA-Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BDTSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">feature</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BDTSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BDTSuite');
+function tableData_BDTSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'feature')
+data.setCell(0, 2, 'continuum.cucumber.testRunner.TestRunner')
+data.setCell(0, 3, 92367);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'feature')
+data.setCell(1, 2, 'continuum.cucumber.testRunner.Runner')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'feature')
+data.setCell(2, 2, 'continuum.cucumber.testRunner.Runner')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'feature')
+data.setCell(3, 2, 'continuum.cucumber.testRunner.Runner')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'feature')
+data.setCell(4, 2, 'continuum.cucumber.testRunner.Runner')
+data.setCell(4, 3, 0);
+window.suiteTableData['BDTSuite']= { tableData: data, tableDiv: 'times-div-BDTSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-BDTSuite">
+              </div> <!-- times-div-BDTSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BDTSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">*****  feature test has Passed *****</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">*****  feature test has Passed *****</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">*****  feature test has Passed *****</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Opening application with urlhttps://noc.dtitsupport247.net</span>
+                <span class="reporter-method-output">Log in to NOC application</span>
+                <span class="reporter-method-output">Enter login credentials  to ITS portal</span>
+                <span class="reporter-method-output">Writing user_sdmto Login email id textbox</span>
+                <span class="reporter-method-output">Writing Sdm@1234to Login password text box</span>
+                <span class="reporter-method-output">Clicking on  Login button</span>
+                <span class="reporter-method-output">Clicking on  Close btn on popup</span>
+                <span class="reporter-method-output">Close btn on popup exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Activity</span>
+                <span class="reporter-method-output">Activity exists true</span>
+                <span class="reporter-method-output">MenuAccessManagement exists true</span>
+                <span class="reporter-method-output">SwtichGroup exists true</span>
+                <span class="reporter-method-output">UserManagement exists true</span>
+                <span class="reporter-method-output">OldEventManagement exists true</span>
+                <span class="reporter-method-output">AutoTicketRuleVeritas exists true</span>
+                <span class="reporter-method-output">AllowbypassTL exists true</span>
+                <span class="reporter-method-output">Addknowledgebase exists true</span>
+                <span class="reporter-method-output">ManageFAQKBArticle exists true</span>
+                <span class="reporter-method-output">UpdateUser exists true</span>
+                <span class="reporter-method-output">MainDashboardConfig exists true</span>
+                <span class="reporter-method-output">EscalationCategoryRelationship exists true</span>
+                <span class="reporter-method-output">PartnerNOCSupportconfig exists true</span>
+                <span class="reporter-method-output">ReasonAssigntoMSP exists true</span>
+                <span class="reporter-method-output">ManageAutoTicketTemplate exists true</span>
+                <span class="reporter-method-output">ManageSubStatus exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Activity</span>
+                <span class="reporter-method-output">Activity exists true</span>
+                <span class="reporter-method-output">MenuAccessManagement exists true</span>
+                <span class="reporter-method-output">SwtichGroup exists true</span>
+                <span class="reporter-method-output">UserManagement exists true</span>
+                <span class="reporter-method-output">OldEventManagement exists true</span>
+                <span class="reporter-method-output">AutoTicketRuleVeritas exists true</span>
+                <span class="reporter-method-output">AllowbypassTL exists true</span>
+                <span class="reporter-method-output">Addknowledgebase exists true</span>
+                <span class="reporter-method-output">ManageFAQKBArticle exists true</span>
+                <span class="reporter-method-output">UpdateUser exists true</span>
+                <span class="reporter-method-output">MainDashboardConfig exists true</span>
+                <span class="reporter-method-output">EscalationCategoryRelationship exists true</span>
+                <span class="reporter-method-output">PartnerNOCSupportconfig exists true</span>
+                <span class="reporter-method-output">ReasonAssigntoMSP exists true</span>
+                <span class="reporter-method-output">ManageAutoTicketTemplate exists true</span>
+                <span class="reporter-method-output">ManageSubStatus exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Analysis</span>
+                <span class="reporter-method-output">Analysis exists true</span>
+                <span class="reporter-method-output">TicketPerformancereport exists true</span>
+                <span class="reporter-method-output">Liveuserreport exists true</span>
+                <span class="reporter-method-output">Alertfluctuation exists true</span>
+                <span class="reporter-method-output">WorlloadAlert exists true</span>
+                <span class="reporter-method-output">TicketAnalysisReport exists true</span>
+                <span class="reporter-method-output">Last24Devicedown exists true</span>
+                <span class="reporter-method-output">LmiRescueAnalysis exists true</span>
+                <span class="reporter-method-output">Mouse hovering over ITS247 Tools</span>
+                <span class="reporter-method-output">ITS247 Tools exists true</span>
+                <span class="reporter-method-output">ITS247submenu exists true</span>
+                <span class="reporter-method-output">ITS247submenu exists true</span>
+                <span class="reporter-method-output">Mouse hovering over ITS247 Tools</span>
+                <span class="reporter-method-output">ITS247 Tools exists true</span>
+                <span class="reporter-method-output">ITS247submenu exists true</span>
+                <span class="reporter-method-output">ITS247submenu exists true</span>
+                <span class="reporter-method-output">Mouse hovering over ITS247 Tools</span>
+                <span class="reporter-method-output">ITS247 Tools exists true</span>
+                <span class="reporter-method-output">ITS247submenu exists true</span>
+                <span class="reporter-method-output">ITS247submenu exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Management</span>
+                <span class="reporter-method-output">Management exists true</span>
+                <span class="reporter-method-output">IntellimonAlerts exists true</span>
+                <span class="reporter-method-output">Alerts exists true</span>
+                <span class="reporter-method-output">Tickets exists true</span>
+                <span class="reporter-method-output">TamIndiaDashboard exists true</span>
+                <span class="reporter-method-output">PartnerFeedback exists true</span>
+                <span class="reporter-method-output">PartnerFlag exists true</span>
+                <span class="reporter-method-output">ManagedCustomerSurvetDetails exists true</span>
+                <span class="reporter-method-output">ConnectwiseSiteMapping exists true</span>
+                <span class="reporter-method-output">ConnectwiseSiteMapping exists true</span>
+                <span class="reporter-method-output">SLADashboardConditionMapping exists true</span>
+                <span class="reporter-method-output">ManagedPSAPartnetUser exists true</span>
+                <span class="reporter-method-output">Priotization exists true</span>
+                <span class="reporter-method-output">NOCWorkflowRedesign exists true</span>
+                <span class="reporter-method-output">EmailtoTicket exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Management</span>
+                <span class="reporter-method-output">Management exists true</span>
+                <span class="reporter-method-output">IntellimonAlerts exists true</span>
+                <span class="reporter-method-output">Alerts exists true</span>
+                <span class="reporter-method-output">Tickets exists true</span>
+                <span class="reporter-method-output">TamIndiaDashboard exists true</span>
+                <span class="reporter-method-output">PartnerFeedback exists true</span>
+                <span class="reporter-method-output">PartnerFlag exists true</span>
+                <span class="reporter-method-output">ManagedCustomerSurvetDetails exists true</span>
+                <span class="reporter-method-output">ConnectwiseSiteMapping exists true</span>
+                <span class="reporter-method-output">ConnectwiseSiteMapping exists true</span>
+                <span class="reporter-method-output">SLADashboardConditionMapping exists true</span>
+                <span class="reporter-method-output">ManagedPSAPartnetUser exists true</span>
+                <span class="reporter-method-output">Priotization exists true</span>
+                <span class="reporter-method-output">NOCWorkflowRedesign exists true</span>
+                <span class="reporter-method-output">EmailtoTicket exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Settings</span>
+                <span class="reporter-method-output">Settings exists true</span>
+                <span class="reporter-method-output">Usersettings exists true</span>
+                <span class="reporter-method-output">MessageBoard exists true</span>
+                <span class="reporter-method-output">ViewFAQ exists true</span>
+                <span class="reporter-method-output">Scheduledticketdue exists true</span>
+                <span class="reporter-method-output">Closedalertreminder exists true</span>
+                <span class="reporter-method-output">Handoverrequest exists true</span>
+                <span class="reporter-method-output">Handoverrecive exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Settings</span>
+                <span class="reporter-method-output">Settings exists true</span>
+                <span class="reporter-method-output">Usersettings exists true</span>
+                <span class="reporter-method-output">MessageBoard exists true</span>
+                <span class="reporter-method-output">ViewFAQ exists true</span>
+                <span class="reporter-method-output">Scheduledticketdue exists true</span>
+                <span class="reporter-method-output">Closedalertreminder exists true</span>
+                <span class="reporter-method-output">Handoverrequest exists true</span>
+                <span class="reporter-method-output">Handoverrecive exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Report</span>
+                <span class="reporter-method-output">Report exists true</span>
+                <span class="reporter-method-output">MNList exists true</span>
+                <span class="reporter-method-output">Alert exists true</span>
+                <span class="reporter-method-output">ReportTicket exists true</span>
+                <span class="reporter-method-output">NOCUsersReport exists true</span>
+                <span class="reporter-method-output">ReportITS247Tools exists true</span>
+                <span class="reporter-method-output">EscalationAuditReport exists true</span>
+                <span class="reporter-method-output">PartnerDefinedMonitoring exists true</span>
+                <span class="reporter-method-output">PartnerSupportPortal exists true</span>
+                <span class="reporter-method-output">PerformanceReport exists true</span>
+                <span class="reporter-method-output">PSAReport exists true</span>
+                <span class="reporter-method-output">PartnetAlertCQTicketDetails exists true</span>
+                <span class="reporter-method-output">NOCMISReport exists true</span>
+                <span class="reporter-method-output">RealTimePlayStatusManagement exists true</span>
+                <span class="reporter-method-output">FalseAlarmReport exists true</span>
+                <span class="reporter-method-output">SMSSummaryReport exists true</span>
+                <span class="reporter-method-output">IntellimonKnowledgebaseReport exists true</span>
+                <span class="reporter-method-output">CustomerFeedbackSurveyReport exists true</span>
+                <span class="reporter-method-output">TechAdvantageReport exists true</span>
+                <span class="reporter-method-output">MSPUserDetails exists true</span>
+                <span class="reporter-method-output">ManualSurverDetails exists true</span>
+                <span class="reporter-method-output">Mouse hovering over Report</span>
+                <span class="reporter-method-output">Report exists true</span>
+                <span class="reporter-method-output">MNList exists true</span>
+                <span class="reporter-method-output">Alert exists true</span>
+                <span class="reporter-method-output">ReportTicket exists true</span>
+                <span class="reporter-method-output">NOCUsersReport exists true</span>
+                <span class="reporter-method-output">ReportITS247Tools exists true</span>
+                <span class="reporter-method-output">EscalationAuditReport exists true</span>
+                <span class="reporter-method-output">PartnerDefinedMonitoring exists true</span>
+                <span class="reporter-method-output">PartnerSupportPortal exists true</span>
+                <span class="reporter-method-output">PerformanceReport exists true</span>
+                <span class="reporter-method-output">PSAReport exists true</span>
+                <span class="reporter-method-output">PartnetAlertCQTicketDetails exists true</span>
+                <span class="reporter-method-output">NOCMISReport exists true</span>
+                <span class="reporter-method-output">RealTimePlayStatusManagement exists true</span>
+                <span class="reporter-method-output">FalseAlarmReport exists true</span>
+                <span class="reporter-method-output">SMSSummaryReport exists true</span>
+                <span class="reporter-method-output">IntellimonKnowledgebaseReport exists true</span>
+                <span class="reporter-method-output">CustomerFeedbackSurveyReport exists true</span>
+                <span class="reporter-method-output">TechAdvantageReport exists true</span>
+                <span class="reporter-method-output">MSPUserDetails exists true</span>
+                <span class="reporter-method-output">ManualSurverDetails exists true</span>
+                <span class="reporter-method-output">Mouse hovering over DashboardInbox</span>
+                <span class="reporter-method-output">DashboardInbox exists true</span>
+                <span class="reporter-method-output">PartnetCommunicationInbox exists true</span>
+                <span class="reporter-method-output">TeamboxShort exists true</span>
+                <span class="reporter-method-output">GlobalServiceDeskInbox exists true</span>
+                <span class="reporter-method-output">NocWorkflowRedesignBeta exists true</span>
+                <span class="reporter-method-output">ContinuumVaultDashboard exists true</span>
+                <span class="reporter-method-output">OffHRmaint exists true</span>
+                <span class="reporter-method-output">ServerAlerts exists true</span>
+                <span class="reporter-method-output">VeritasBackupAlert exists true</span>
+                <span class="reporter-method-output">CommonAlert exists true</span>
+                <span class="reporter-method-output">DeviceDownPreprocessing exists true</span>
+                <span class="reporter-method-output">AgentMalfunctionInbox exists true</span>
+                <span class="reporter-method-output">ApplicationMonitoring exists true</span>
+                <span class="reporter-method-output">CallingQueue exists true</span>
+                <span class="reporter-method-output">PreventiveMaintenanceInbox exists true</span>
+                <span class="reporter-method-output">EmergencyLowDiskSpace exists true</span>
+                <span class="reporter-method-output">EmailTransactionMonitoring exists true</span>
+                <span class="reporter-method-output">VSSWriterAlerts exists true</span>
+                <span class="reporter-method-output">PCService exists true</span>
+                <span class="reporter-method-output">ServerProjects exists true</span>
+                <span class="reporter-method-output">LinuxDashboard exists true</span>
+                <span class="reporter-method-output">TechAdvantageDesktop exists true</span>
+                <span class="reporter-method-output">TechAdvantageServer exists true</span>
+                <span class="reporter-method-output">PSAMonitoringDashboard exists true</span>
+                <span class="reporter-method-output">SLADashboardAlert exists true</span>
+                <span class="reporter-method-output">SLADashboardTickets exists true</span>
+                <span class="reporter-method-output">PSTInbox exists true</span>
+                <span class="reporter-method-output">Mouse hovering over DashboardInbox</span>
+                <span class="reporter-method-output">DashboardInbox exists true</span>
+                <span class="reporter-method-output">PartnetCommunicationInbox exists true</span>
+                <span class="reporter-method-output">TeamboxShort exists true</span>
+                <span class="reporter-method-output">GlobalServiceDeskInbox exists true</span>
+                <span class="reporter-method-output">NocWorkflowRedesignBeta exists true</span>
+                <span class="reporter-method-output">ContinuumVaultDashboard exists true</span>
+                <span class="reporter-method-output">OffHRmaint exists true</span>
+                <span class="reporter-method-output">ServerAlerts exists true</span>
+                <span class="reporter-method-output">VeritasBackupAlert exists true</span>
+                <span class="reporter-method-output">CommonAlert exists true</span>
+                <span class="reporter-method-output">DeviceDownPreprocessing exists true</span>
+                <span class="reporter-method-output">AgentMalfunctionInbox exists true</span>
+                <span class="reporter-method-output">ApplicationMonitoring exists true</span>
+                <span class="reporter-method-output">CallingQueue exists true</span>
+                <span class="reporter-method-output">PreventiveMaintenanceInbox exists true</span>
+                <span class="reporter-method-output">EmergencyLowDiskSpace exists true</span>
+                <span class="reporter-method-output">EmailTransactionMonitoring exists true</span>
+                <span class="reporter-method-output">VSSWriterAlerts exists true</span>
+                <span class="reporter-method-output">PCService exists true</span>
+                <span class="reporter-method-output">ServerProjects exists true</span>
+                <span class="reporter-method-output">LinuxDashboard exists true</span>
+                <span class="reporter-method-output">TechAdvantageDesktop exists true</span>
+                <span class="reporter-method-output">TechAdvantageServer exists true</span>
+                <span class="reporter-method-output">PSAMonitoringDashboard exists true</span>
+                <span class="reporter-method-output">SLADashboardAlert exists true</span>
+                <span class="reporter-method-output">SLADashboardTickets exists true</span>
+                <span class="reporter-method-output">PSTInbox exists true</span>
+                <span class="reporter-method-output">Mouse hovering over QuickReports</span>
+                <span class="reporter-method-output">QuickReports exists true</span>
+                <span class="reporter-method-output">TicketReport exists true</span>
+                <span class="reporter-method-output">AlertReport exists true</span>
+                <span class="reporter-method-output">QRMNList exists true</span>
+                <span class="reporter-method-output">AlertsCount exists true</span>
+                <span class="reporter-method-output">EmergencyAlert exists true</span>
+                <span class="reporter-method-output">NOCDefinedApplication exists true</span>
+                <span class="reporter-method-output">UserPresenceAllocation exists true</span>
+                <span class="reporter-method-output">QRCallingQueue exists true</span>
+                <span class="reporter-method-output">ConditionalMonitoringReport exists true</span>
+                <span class="reporter-method-output">UserReview exists true</span>
+                <span class="reporter-method-output">MSOQuickSearch exists true</span>
+                <span class="reporter-method-output">MACAgentReport exists true</span>
+                <span class="reporter-method-output">RMMAgentReport exists true</span>
+                <span class="reporter-method-output">VaultAgentReport exists true</span>
+                <span class="reporter-method-output">MSPReasonCodesReport exists true</span>
+                <span class="reporter-method-output">HistoricalData exists true</span>
+                <span class="reporter-method-output">TicketSynclog exists true</span>
+                <span class="reporter-method-output">RMMVaultC247Reports exists true</span>
+                <span class="reporter-method-output">AlertTicketAgingReport exists true</span>
+                <span class="reporter-method-output">SLAMissedHourlyFlowReport exists true</span>
+                <span class="reporter-method-output">RightAnswersReport exists true</span>
+                <span class="reporter-method-output">RightAnswersReport exists true</span>
+                <span class="reporter-method-output">SubStatusReport exists true</span>
+                <span class="reporter-method-output">ServerProjectSubStatusReport exists true</span>
+                <span class="reporter-method-output">RightAnswerUtilization exists true</span>
+                <span class="reporter-method-output">Mouse hovering over QuickReports</span>
+                <span class="reporter-method-output">QuickReports exists true</span>
+                <span class="reporter-method-output">TicketReport exists true</span>
+                <span class="reporter-method-output">AlertReport exists true</span>
+                <span class="reporter-method-output">QRMNList exists true</span>
+                <span class="reporter-method-output">AlertsCount exists true</span>
+                <span class="reporter-method-output">EmergencyAlert exists true</span>
+                <span class="reporter-method-output">NOCDefinedApplication exists true</span>
+                <span class="reporter-method-output">UserPresenceAllocation exists true</span>
+                <span class="reporter-method-output">QRCallingQueue exists true</span>
+                <span class="reporter-method-output">ConditionalMonitoringReport exists true</span>
+                <span class="reporter-method-output">UserReview exists true</span>
+                <span class="reporter-method-output">MSOQuickSearch exists true</span>
+                <span class="reporter-method-output">MACAgentReport exists true</span>
+                <span class="reporter-method-output">RMMAgentReport exists true</span>
+                <span class="reporter-method-output">VaultAgentReport exists true</span>
+                <span class="reporter-method-output">MSPReasonCodesReport exists true</span>
+                <span class="reporter-method-output">HistoricalData exists true</span>
+                <span class="reporter-method-output">TicketSynclog exists true</span>
+                <span class="reporter-method-output">RMMVaultC247Reports exists true</span>
+                <span class="reporter-method-output">AlertTicketAgingReport exists true</span>
+                <span class="reporter-method-output">SLAMissedHourlyFlowReport exists true</span>
+                <span class="reporter-method-output">RightAnswersReport exists true</span>
+                <span class="reporter-method-output">RightAnswersReport exists true</span>
+                <span class="reporter-method-output">SubStatusReport exists true</span>
+                <span class="reporter-method-output">ServerProjectSubStatusReport exists true</span>
+                <span class="reporter-method-output">RightAnswerUtilization exists true</span>
+                <span class="reporter-method-output">*****  feature test has Passed *****</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">*****  feature test has Passed *****</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BDTSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">continuum.cucumber.testRunner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">2375 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)</span>
+                <span class="method-start">2672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">95043 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">continuum.cucumber.testRunner.Runner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">122044 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">feature(As a user I want to check all sub Menus in all Main Menus of NOC Portal)</span>
+                <span class="method-start">122082 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+                <span class="method-start">122082 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(As a user I can login to NOC portal with valid credentials so that only authorized user have)</span>
+                <span class="method-start">122083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(As a user status I want to create ticket on NOC with different status)</span>
+                <span class="method-start">122083 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">continuum.cucumber.testRunner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">122083 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

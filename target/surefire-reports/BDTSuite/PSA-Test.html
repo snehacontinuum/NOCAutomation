@@ -1,0 +1,406 @@
+<html>
+<head>
+<title>TestNG:  PSA-Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PSA-Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 21 19:37:11 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>126 seconds (126068 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='continuum.cucumber.testRunner.TestRunner.feature()'><b>feature</b><br>Test class: continuum.cucumber.testRunner.TestRunner<br>Test method: Runs Cucumber Feature<br>Parameters: As a user I want to check all sub Menus in all Main Menus of NOC Portal<br/>
+<a href="#Output-1782080435" onClick='toggleBox("Output-1782080435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1782080435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1782080435">
+Opening application with urlhttps://noc.dtitsupport247.net<br/>
+Log in to NOC application<br/>
+Enter login credentials  to ITS portal<br/>
+Writing user_sdmto Login email id textbox<br/>
+Writing Sdm@1234to Login password text box<br/>
+Clicking on  Login button<br/>
+Clicking on  Close btn on popup<br/>
+Close btn on popup exists true<br/>
+Mouse hovering over Activity<br/>
+Activity exists true<br/>
+MenuAccessManagement exists true<br/>
+SwtichGroup exists true<br/>
+UserManagement exists true<br/>
+OldEventManagement exists true<br/>
+AutoTicketRuleVeritas exists true<br/>
+AllowbypassTL exists true<br/>
+Addknowledgebase exists true<br/>
+ManageFAQKBArticle exists true<br/>
+UpdateUser exists true<br/>
+MainDashboardConfig exists true<br/>
+EscalationCategoryRelationship exists true<br/>
+PartnerNOCSupportconfig exists true<br/>
+ReasonAssigntoMSP exists true<br/>
+ManageAutoTicketTemplate exists true<br/>
+ManageSubStatus exists true<br/>
+Mouse hovering over Activity<br/>
+Activity exists true<br/>
+MenuAccessManagement exists true<br/>
+SwtichGroup exists true<br/>
+UserManagement exists true<br/>
+OldEventManagement exists true<br/>
+AutoTicketRuleVeritas exists true<br/>
+AllowbypassTL exists true<br/>
+Addknowledgebase exists true<br/>
+ManageFAQKBArticle exists true<br/>
+UpdateUser exists true<br/>
+MainDashboardConfig exists true<br/>
+EscalationCategoryRelationship exists true<br/>
+PartnerNOCSupportconfig exists true<br/>
+ReasonAssigntoMSP exists true<br/>
+ManageAutoTicketTemplate exists true<br/>
+ManageSubStatus exists true<br/>
+Mouse hovering over Analysis<br/>
+Analysis exists true<br/>
+TicketPerformancereport exists true<br/>
+Liveuserreport exists true<br/>
+Alertfluctuation exists true<br/>
+WorlloadAlert exists true<br/>
+TicketAnalysisReport exists true<br/>
+Last24Devicedown exists true<br/>
+LmiRescueAnalysis exists true<br/>
+Mouse hovering over ITS247 Tools<br/>
+ITS247 Tools exists true<br/>
+ITS247submenu exists true<br/>
+ITS247submenu exists true<br/>
+Mouse hovering over ITS247 Tools<br/>
+ITS247 Tools exists true<br/>
+ITS247submenu exists true<br/>
+ITS247submenu exists true<br/>
+Mouse hovering over ITS247 Tools<br/>
+ITS247 Tools exists true<br/>
+ITS247submenu exists true<br/>
+ITS247submenu exists true<br/>
+Mouse hovering over Management<br/>
+Management exists true<br/>
+IntellimonAlerts exists true<br/>
+Alerts exists true<br/>
+Tickets exists true<br/>
+TamIndiaDashboard exists true<br/>
+PartnerFeedback exists true<br/>
+PartnerFlag exists true<br/>
+ManagedCustomerSurvetDetails exists true<br/>
+ConnectwiseSiteMapping exists true<br/>
+ConnectwiseSiteMapping exists true<br/>
+SLADashboardConditionMapping exists true<br/>
+ManagedPSAPartnetUser exists true<br/>
+Priotization exists true<br/>
+NOCWorkflowRedesign exists true<br/>
+EmailtoTicket exists true<br/>
+Mouse hovering over Management<br/>
+Management exists true<br/>
+IntellimonAlerts exists true<br/>
+Alerts exists true<br/>
+Tickets exists true<br/>
+TamIndiaDashboard exists true<br/>
+PartnerFeedback exists true<br/>
+PartnerFlag exists true<br/>
+ManagedCustomerSurvetDetails exists true<br/>
+ConnectwiseSiteMapping exists true<br/>
+ConnectwiseSiteMapping exists true<br/>
+SLADashboardConditionMapping exists true<br/>
+ManagedPSAPartnetUser exists true<br/>
+Priotization exists true<br/>
+NOCWorkflowRedesign exists true<br/>
+EmailtoTicket exists true<br/>
+Mouse hovering over Settings<br/>
+Settings exists true<br/>
+Usersettings exists true<br/>
+MessageBoard exists true<br/>
+ViewFAQ exists true<br/>
+Scheduledticketdue exists true<br/>
+Closedalertreminder exists true<br/>
+Handoverrequest exists true<br/>
+Handoverrecive exists true<br/>
+Mouse hovering over Settings<br/>
+Settings exists true<br/>
+Usersettings exists true<br/>
+MessageBoard exists true<br/>
+ViewFAQ exists true<br/>
+Scheduledticketdue exists true<br/>
+Closedalertreminder exists true<br/>
+Handoverrequest exists true<br/>
+Handoverrecive exists true<br/>
+Mouse hovering over Report<br/>
+Report exists true<br/>
+MNList exists true<br/>
+Alert exists true<br/>
+ReportTicket exists true<br/>
+NOCUsersReport exists true<br/>
+ReportITS247Tools exists true<br/>
+EscalationAuditReport exists true<br/>
+PartnerDefinedMonitoring exists true<br/>
+PartnerSupportPortal exists true<br/>
+PerformanceReport exists true<br/>
+PSAReport exists true<br/>
+PartnetAlertCQTicketDetails exists true<br/>
+NOCMISReport exists true<br/>
+RealTimePlayStatusManagement exists true<br/>
+FalseAlarmReport exists true<br/>
+SMSSummaryReport exists true<br/>
+IntellimonKnowledgebaseReport exists true<br/>
+CustomerFeedbackSurveyReport exists true<br/>
+TechAdvantageReport exists true<br/>
+MSPUserDetails exists true<br/>
+ManualSurverDetails exists true<br/>
+Mouse hovering over Report<br/>
+Report exists true<br/>
+MNList exists true<br/>
+Alert exists true<br/>
+ReportTicket exists true<br/>
+NOCUsersReport exists true<br/>
+ReportITS247Tools exists true<br/>
+EscalationAuditReport exists true<br/>
+PartnerDefinedMonitoring exists true<br/>
+PartnerSupportPortal exists true<br/>
+PerformanceReport exists true<br/>
+PSAReport exists true<br/>
+PartnetAlertCQTicketDetails exists true<br/>
+NOCMISReport exists true<br/>
+RealTimePlayStatusManagement exists true<br/>
+FalseAlarmReport exists true<br/>
+SMSSummaryReport exists true<br/>
+IntellimonKnowledgebaseReport exists true<br/>
+CustomerFeedbackSurveyReport exists true<br/>
+TechAdvantageReport exists true<br/>
+MSPUserDetails exists true<br/>
+ManualSurverDetails exists true<br/>
+Mouse hovering over DashboardInbox<br/>
+DashboardInbox exists true<br/>
+PartnetCommunicationInbox exists true<br/>
+TeamboxShort exists true<br/>
+GlobalServiceDeskInbox exists true<br/>
+NocWorkflowRedesignBeta exists true<br/>
+ContinuumVaultDashboard exists true<br/>
+OffHRmaint exists true<br/>
+ServerAlerts exists true<br/>
+VeritasBackupAlert exists true<br/>
+CommonAlert exists true<br/>
+DeviceDownPreprocessing exists true<br/>
+AgentMalfunctionInbox exists true<br/>
+ApplicationMonitoring exists true<br/>
+CallingQueue exists true<br/>
+PreventiveMaintenanceInbox exists true<br/>
+EmergencyLowDiskSpace exists true<br/>
+EmailTransactionMonitoring exists true<br/>
+VSSWriterAlerts exists true<br/>
+PCService exists true<br/>
+ServerProjects exists true<br/>
+LinuxDashboard exists true<br/>
+TechAdvantageDesktop exists true<br/>
+TechAdvantageServer exists true<br/>
+PSAMonitoringDashboard exists true<br/>
+SLADashboardAlert exists true<br/>
+SLADashboardTickets exists true<br/>
+PSTInbox exists true<br/>
+Mouse hovering over DashboardInbox<br/>
+DashboardInbox exists true<br/>
+PartnetCommunicationInbox exists true<br/>
+TeamboxShort exists true<br/>
+GlobalServiceDeskInbox exists true<br/>
+NocWorkflowRedesignBeta exists true<br/>
+ContinuumVaultDashboard exists true<br/>
+OffHRmaint exists true<br/>
+ServerAlerts exists true<br/>
+VeritasBackupAlert exists true<br/>
+CommonAlert exists true<br/>
+DeviceDownPreprocessing exists true<br/>
+AgentMalfunctionInbox exists true<br/>
+ApplicationMonitoring exists true<br/>
+CallingQueue exists true<br/>
+PreventiveMaintenanceInbox exists true<br/>
+EmergencyLowDiskSpace exists true<br/>
+EmailTransactionMonitoring exists true<br/>
+VSSWriterAlerts exists true<br/>
+PCService exists true<br/>
+ServerProjects exists true<br/>
+LinuxDashboard exists true<br/>
+TechAdvantageDesktop exists true<br/>
+TechAdvantageServer exists true<br/>
+PSAMonitoringDashboard exists true<br/>
+SLADashboardAlert exists true<br/>
+SLADashboardTickets exists true<br/>
+PSTInbox exists true<br/>
+Mouse hovering over QuickReports<br/>
+QuickReports exists true<br/>
+TicketReport exists true<br/>
+AlertReport exists true<br/>
+QRMNList exists true<br/>
+AlertsCount exists true<br/>
+EmergencyAlert exists true<br/>
+NOCDefinedApplication exists true<br/>
+UserPresenceAllocation exists true<br/>
+QRCallingQueue exists true<br/>
+ConditionalMonitoringReport exists true<br/>
+UserReview exists true<br/>
+MSOQuickSearch exists true<br/>
+MACAgentReport exists true<br/>
+RMMAgentReport exists true<br/>
+VaultAgentReport exists true<br/>
+MSPReasonCodesReport exists true<br/>
+HistoricalData exists true<br/>
+TicketSynclog exists true<br/>
+RMMVaultC247Reports exists true<br/>
+AlertTicketAgingReport exists true<br/>
+SLAMissedHourlyFlowReport exists true<br/>
+RightAnswersReport exists true<br/>
+RightAnswersReport exists true<br/>
+SubStatusReport exists true<br/>
+ServerProjectSubStatusReport exists true<br/>
+RightAnswerUtilization exists true<br/>
+Mouse hovering over QuickReports<br/>
+QuickReports exists true<br/>
+TicketReport exists true<br/>
+AlertReport exists true<br/>
+QRMNList exists true<br/>
+AlertsCount exists true<br/>
+EmergencyAlert exists true<br/>
+NOCDefinedApplication exists true<br/>
+UserPresenceAllocation exists true<br/>
+QRCallingQueue exists true<br/>
+ConditionalMonitoringReport exists true<br/>
+UserReview exists true<br/>
+MSOQuickSearch exists true<br/>
+MACAgentReport exists true<br/>
+RMMAgentReport exists true<br/>
+VaultAgentReport exists true<br/>
+MSPReasonCodesReport exists true<br/>
+HistoricalData exists true<br/>
+TicketSynclog exists true<br/>
+RMMVaultC247Reports exists true<br/>
+AlertTicketAgingReport exists true<br/>
+SLAMissedHourlyFlowReport exists true<br/>
+RightAnswersReport exists true<br/>
+RightAnswersReport exists true<br/>
+SubStatusReport exists true<br/>
+ServerProjectSubStatusReport exists true<br/>
+RightAnswerUtilization exists true<br/>
+*****  feature test has Passed *****<br/>
+</div>
+</td>
+<td></td>
+<td>92</td>
+<td>continuum.cucumber.testRunner.TestRunner@10c1a3b4</td></tr>
+<tr>
+<td title='continuum.cucumber.testRunner.Runner.feature()'><b>feature</b><br>Test class: continuum.cucumber.testRunner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: As a user I want to check all sub Menus in all Main Menus of NOC Portal<br/>
+<a href="#Output-1765900669" onClick='toggleBox("Output-1765900669", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1765900669" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1765900669">
+*****  feature test has Passed *****<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>continuum.cucumber.testRunner.Runner@6245d652</td></tr>
+<tr>
+<td title='continuum.cucumber.testRunner.Runner.feature()'><b>feature</b><br>Test class: continuum.cucumber.testRunner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: As a user status I want to create ticket on NOC with different status<br/>
+<a href="#Output-1268542343" onClick='toggleBox("Output-1268542343", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1268542343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1268542343">
+*****  feature test has Passed *****<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>continuum.cucumber.testRunner.Runner@6245d652</td></tr>
+<tr>
+<td title='continuum.cucumber.testRunner.Runner.feature()'><b>feature</b><br>Test class: continuum.cucumber.testRunner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: As a user I can login to NOC portal with valid credentials so that only authorized user have<br/>
+<a href="#Output-173511385" onClick='toggleBox("Output-173511385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-173511385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-173511385">
+*****  feature test has Passed *****<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>continuum.cucumber.testRunner.Runner@6245d652</td></tr>
+<tr>
+<td title='continuum.cucumber.testRunner.Runner.feature()'><b>feature</b><br>Test class: continuum.cucumber.testRunner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: As a user status I want to create ticket on NOC with different status<br/>
+<a href="#Output-2070538716" onClick='toggleBox("Output-2070538716", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2070538716" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2070538716">
+*****  feature test has Passed *****<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>continuum.cucumber.testRunner.Runner@6245d652</td></tr>
+</table><p>
+</body>
+</html>

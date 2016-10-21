@@ -27,14 +27,14 @@ formatter.match({
   "location": "StepDefinations.openApplication()"
 });
 formatter.result({
-  "duration": 3580552249,
+  "duration": 3316733277,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinations.user_is_login_to_NOC_portal()"
 });
 formatter.result({
-  "duration": 29193826078,
+  "duration": 29950074209,
   "status": "passed"
 });
 formatter.scenario({
@@ -135,28 +135,28 @@ formatter.match({
   "location": "StepDefination1.user_clicks_on_Activity_Main_Menu()"
 });
 formatter.result({
-  "duration": 3983031235,
+  "duration": 3863047370,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.verify_Correct_Sub_menus_get_displayed_in_Activity_Main_Menu()"
 });
 formatter.result({
-  "duration": 4434505287,
+  "duration": 3641691789,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.user_clicks_on_Analysis_Main_Menu()"
 });
 formatter.result({
-  "duration": 3567306389,
+  "duration": 3451482742,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.verify_Correct_Sub_menus_get_displayed()"
 });
 formatter.result({
-  "duration": 3212258485,
+  "duration": 3223297622,
   "status": "passed"
 });
 formatter.match({
@@ -169,7 +169,7 @@ formatter.match({
   "location": "StepDefination1.user_clicks_on_ITS_Tools_Main_Menu(int)"
 });
 formatter.result({
-  "duration": 3211383854,
+  "duration": 3212052666,
   "status": "passed"
 });
 formatter.match({
@@ -182,58 +182,77 @@ formatter.match({
   "location": "StepDefination1.verify_Correct_Sub_menus_get_displayed_in_ITS_Tools_Main_Menu(int)"
 });
 formatter.result({
-  "duration": 3309548989,
+  "duration": 3256833785,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.user_clicks_on_Management_Main_Menu()"
 });
 formatter.result({
-  "duration": 3736615974,
+  "duration": 3623519717,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.verify_Correct_Sub_menus_get_displayed_in_Management_Main_Menu()"
 });
 formatter.result({
-  "duration": 3596303090,
+  "duration": 3674187402,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.user_clicks_on_Settings_Main_Menu()"
 });
 formatter.result({
-  "duration": 3400097261,
+  "duration": 3371017600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.verify_Correct_Sub_menus_get_displayed_in_Settings_Main_Menu()"
 });
 formatter.result({
-  "duration": 3377894544,
+  "duration": 3349635393,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.user_clicks_on_Report_Main_Menu()"
 });
 formatter.result({
-  "duration": 3773466169,
+  "duration": 4268939940,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.verify_Correct_Sub_menus_get_displayed_in_Report_Main_Menu()"
 });
 formatter.result({
-  "duration": 3699849923,
+  "duration": 3816161845,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.user_clicks_on_DashboardInbox_Main_Menu()"
 });
 formatter.result({
-  "duration": 3912204007,
+  "duration": 4007284630,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefination1.verify_Correct_Sub_menus_get_displayed_in_DashboardInbox_Main_Menu()"
+});
+formatter.result({
+  "duration": 4010341488,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefination1.user_clicks_on_Quick_Reports_Main_Menu()"
+});
+formatter.result({
+  "duration": 4065366521,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepDefination1.verify_Correct_Sub_menus_get_displayed_in_Quick_Reports_Main_Menu()"
+});
+formatter.result({
+  "duration": 4181551634,
+  "status": "passed"
+});
 });
