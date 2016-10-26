@@ -244,6 +244,7 @@ public void startNOCApplication(String url){
 
 		 wd.clickElement(loginBtn);
 		 wd.waitFor(2000);
+	
 		 closePopup();
 		}		
          
